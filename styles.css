@@ -293,6 +293,64 @@ body {
     opacity: 1;
 }
 
+.apology-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #fff0f6 0%, #ffe3ec 100%);
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.apology-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 10px 40px rgba(255, 107, 157, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.apology-card::before {
+    content: "💖";
+    font-size: 6rem;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    opacity: 0.1;
+}
+
+.apology-title {
+    color: #ff6b9d;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+.apology-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.emoji-row {
+    font-size: 2rem;
+    margin: 25px 0;
+}
+
+.signature {
+    margin-top: 30px;
+    font-style: italic;
+    color: #999;
+}
+
 .image-description {
     color: #ff6b9d;
     font-size: 1rem;
